@@ -6,4 +6,4 @@ before_install:
   - docker build -t shulme/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run shulme/docker-react -- --converage
+  - docker run shulme/docker-react npm run test -- --converage
